@@ -1,14 +1,15 @@
 package main
 
 import (
-	"github.com/krmsaeed/barber/api"
-	"github.com/krmsaeed/barber/config"
-	"github.com/krmsaeed/barber/data/cache"
-	"github.com/krmsaeed/barber/data/db"
-	"github.com/krmsaeed/barber/pkg/logging"
+	"github.com/naeemaei/golang-clean-web-api/api"
+	"github.com/naeemaei/golang-clean-web-api/config"
+	"github.com/naeemaei/golang-clean-web-api/data/cache"
+	"github.com/naeemaei/golang-clean-web-api/data/db"
+	"github.com/naeemaei/golang-clean-web-api/data/db/migrations"
+	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
 )
 
-// / @securityDefinitions.apikey AuthBearer
+// @securityDefinitions.apikey AuthBearer
 // @in header
 // @name Authorization
 func main() {
@@ -27,6 +28,7 @@ func main() {
 	if err != nil {
 		logger.Fatal(logging.Postgres, logging.Startup, err.Error(), nil)
 	}
+	migrations.Up_1()
 
 	api.InitServer(cfg)
 }

@@ -1,11 +1,15 @@
 package common
 
 import (
+	"math"
 	"math/rand"
+	"regexp"
+	"strconv"
 	"strings"
+	"time"
 	"unicode"
 
-	"github.com/krmsaeed/barber/config"
+	"github.com/naeemaei/golang-clean-web-api/config"
 )
 
 var (
@@ -15,6 +19,9 @@ var (
 	numberSet      = "0123456789"
 	allCharSet     = lowerCharSet + upperCharSet + specialCharSet + numberSet
 )
+
+var matchFirstCap = regexp.MustCompile("(.)([A-Z][a-z]+)")
+var matchAllCap = regexp.MustCompile("([a-z0-9])([A-Z])")
 
 func CheckPassword(password string) bool {
 	cfg := config.GetConfig()
@@ -98,6 +105,16 @@ func GeneratePassword() string {
 	return string(inRune)
 }
 
+func GenerateOtp() string {
+	cfg := config.GetConfig()
+	rand.Seed(time.Now().UnixNano())
+	min := int(math.Pow(10, float64(cfg.Otp.Digits-1)))   // 10^d-1 100000
+	max := int(math.Pow(10, float64(cfg.Otp.Digits)) - 1) // 999999 = 1000000 - 1 (10^d) -1
+
+	var num = rand.Intn(max-min) + min
+	return strconv.Itoa(num)
+}
+
 func HasUpper(s string) bool {
 	for _, r := range s {
 		if unicode.IsUpper(r) && unicode.IsLetter(r) {
@@ -132,4 +149,11 @@ func HasDigits(s string) bool {
 		}
 	}
 	return false
+}
+
+// To snake case : CountryId -> country_id
+func ToSnakeCase(str string) string {
+	snake := matchFirstCap.ReplaceAllString(str, "${1}_${2}")
+	snake = matchAllCap.ReplaceAllString(snake, "${1}_${2}")
+	return strings.ToLower(snake)
 }

@@ -1,9 +1,10 @@
 server:
-  Port: 5005
-  RunMode: debug
+  internalPort: 5005
+  externalPort: 5005
+  runMode: debug
 logger:
-  filePath: ../logs/logs.log
-  Encoding: json
+  filePath: ../logs/
+  encoding: json
   level: debug
   logger: zap
 cors:
@@ -36,3 +37,12 @@ password:
   maxLength: 64
   includeUppercase: true
   includeLowercase: true
+otp:
+  expireTime: 120
+  digits: 6
+  limiter: 100
+jwt:
+  secret: "mySecretKey"
+  refreshSecret: "mySecretKey"
+  accessTokenExpireDuration: 1440
+  refreshTokenExpireDuration: 60
