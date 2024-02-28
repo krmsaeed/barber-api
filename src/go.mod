@@ -1,4 +1,4 @@
-module github.com/naeemaei/golang-clean-web-api
+module github.com/krmsaeed/barber-api
 
 go 1.22.0
 

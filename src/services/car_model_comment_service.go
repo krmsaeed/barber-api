@@ -3,12 +3,12 @@ package services
 import (
 	"context"
 
-	"github.com/naeemaei/golang-clean-web-api/api/dto"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/constants"
-	"github.com/naeemaei/golang-clean-web-api/data/db"
-	"github.com/naeemaei/golang-clean-web-api/data/models"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
+	"github.com/krmsaeed/barber-api/api/dto"
+	"github.com/krmsaeed/barber-api/config"
+	"github.com/krmsaeed/barber-api/constants"
+	"github.com/krmsaeed/barber-api/data/db"
+	"github.com/krmsaeed/barber-api/data/models"
+	"github.com/krmsaeed/barber-api/pkg/logging"
 )
 
 type CarModelCommentService struct {

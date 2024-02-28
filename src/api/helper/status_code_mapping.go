@@ -3,7 +3,7 @@ package helper
 import (
 	"net/http"
 
-	"github.com/naeemaei/golang-clean-web-api/pkg/service_errors"
+	"github.com/krmsaeed/barber-api/pkg/service_errors"
 )
 
 var StatusCodeMapping = map[string]int{

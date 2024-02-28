@@ -2,7 +2,7 @@ package validation
 
 import (
 	"github.com/go-playground/validator/v10"
-	"github.com/naeemaei/golang-clean-web-api/common"
+	"github.com/krmsaeed/barber-api/common"
 )
 
 func IranianMobileNumberValidator(fld validator.FieldLevel) bool {

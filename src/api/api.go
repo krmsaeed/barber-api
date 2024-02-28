@@ -6,13 +6,13 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
-	"github.com/naeemaei/golang-clean-web-api/api/middlewares"
-	"github.com/naeemaei/golang-clean-web-api/api/routers"
-	validation "github.com/naeemaei/golang-clean-web-api/api/validations"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/docs"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
-	"github.com/naeemaei/golang-clean-web-api/pkg/metrics"
+	"github.com/krmsaeed/barber-api/api/middlewares"
+	"github.com/krmsaeed/barber-api/api/routers"
+	validation "github.com/krmsaeed/barber-api/api/validations"
+	"github.com/krmsaeed/barber-api/config"
+	"github.com/krmsaeed/barber-api/docs"
+	"github.com/krmsaeed/barber-api/pkg/logging"
+	"github.com/krmsaeed/barber-api/pkg/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	swaggerFiles "github.com/swaggo/files"
@@ -144,12 +144,12 @@ func RegisterSwagger(r *gin.Engine, cfg *config.Config) {
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 }
 
-func RegisterPrometheus(){
+func RegisterPrometheus() {
 	err := prometheus.Register(metrics.DbCall)
 	if err != nil {
 		logger.Error(logging.Prometheus, logging.Startup, err.Error(), nil)
 	}
-	
+
 	err = prometheus.Register(metrics.HttpDuration)
 	if err != nil {
 		logger.Error(logging.Prometheus, logging.Startup, err.Error(), nil)

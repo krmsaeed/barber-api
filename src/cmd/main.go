@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/naeemaei/golang-clean-web-api/api"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/data/cache"
-	"github.com/naeemaei/golang-clean-web-api/data/db"
-	"github.com/naeemaei/golang-clean-web-api/data/db/migrations"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
+	"github.com/krmsaeed/barber-api/api"
+	"github.com/krmsaeed/barber-api/config"
+	"github.com/krmsaeed/barber-api/data/cache"
+	"github.com/krmsaeed/barber-api/data/db"
+	"github.com/krmsaeed/barber-api/data/db/migrations"
+	"github.com/krmsaeed/barber-api/pkg/logging"
 )
 
 // @securityDefinitions.apikey AuthBearer

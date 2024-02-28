@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/api/dto"
-	"github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	"github.com/krmsaeed/barber-api/api/dto"
+	"github.com/krmsaeed/barber-api/api/helper"
+	"github.com/krmsaeed/barber-api/config"
+	"github.com/krmsaeed/barber-api/services"
 )
 
 type UsersHandler struct {

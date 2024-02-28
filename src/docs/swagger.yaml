@@ -18,14 +18,14 @@ definitions:
     - last_name
     - mobile_number
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelColorResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelColorResponse:
     properties:
       color:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.ColorResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.ColorResponse'
       id:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelCommentResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelCommentResponse:
     properties:
       carModelId:
         type: integer
@@ -34,20 +34,20 @@ definitions:
       message:
         type: string
       user:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UserResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UserResponse'
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelImageResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelImageResponse:
     properties:
       carModelId:
         type: integer
       id:
         type: integer
       image:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.FileResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.FileResponse'
       isMainImage:
         type: boolean
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPriceHistoryResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelPriceHistoryResponse:
     properties:
       carModelYearId:
         type: integer
@@ -58,80 +58,80 @@ definitions:
       priceAt:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPropertyResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelPropertyResponse:
     properties:
       carModelId:
         type: integer
       id:
         type: integer
       property:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyResponse'
       value:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelResponse:
     properties:
       carModelColors:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelColorResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelColorResponse'
         type: array
       carModelComments:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelCommentResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelCommentResponse'
         type: array
       carModelImages:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelImageResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelImageResponse'
         type: array
       carModelProperties:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPropertyResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPropertyResponse'
         type: array
       carModelYears:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelYearResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelYearResponse'
         type: array
       carType:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarTypeResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarTypeResponse'
       company:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CompanyResponse'
       gearbox:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.GearboxResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.GearboxResponse'
       id:
         type: integer
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarModelYearResponse:
+  github_com_krmsaeed_barber_api_dto.CarModelYearResponse:
     properties:
       carModelId:
         type: integer
       carModelPriceHistories:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPriceHistoryResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPriceHistoryResponse'
         type: array
       id:
         type: integer
       persianYear:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearWithoutDateResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PersianYearWithoutDateResponse'
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CarTypeResponse:
+  github_com_krmsaeed_barber_api_dto.CarTypeResponse:
     properties:
       id:
         type: integer
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CityResponse:
+  github_com_krmsaeed_barber_api_dto.CityResponse:
     properties:
       country:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CountryResponse'
       id:
         type: integer
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.ColorResponse:
+  github_com_krmsaeed_barber_api_dto.ColorResponse:
     properties:
       hexCode:
         type: string
@@ -140,31 +140,31 @@ definitions:
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse:
+  github_com_krmsaeed_barber_api_dto.CompanyResponse:
     properties:
       country:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CountryResponse'
       id:
         type: integer
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse:
+  github_com_krmsaeed_barber_api_dto.CountryResponse:
     properties:
       cities:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CityResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CityResponse'
         type: array
       companies:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CompanyResponse'
         type: array
       id:
         type: integer
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelColorRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelColorRequest:
     properties:
       carModelId:
         type: integer
@@ -174,7 +174,7 @@ definitions:
     - carModelId
     - colorId
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelCommentRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelCommentRequest:
     properties:
       carModelId:
         type: integer
@@ -187,7 +187,7 @@ definitions:
     - carModelId
     - message
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelImageRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelImageRequest:
     properties:
       carModelId:
         type: integer
@@ -199,7 +199,7 @@ definitions:
     - carModelId
     - imageId
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelPriceHistoryRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelPriceHistoryRequest:
     properties:
       carModelYearId:
         type: integer
@@ -212,7 +212,7 @@ definitions:
     - price
     - priceAt
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelPropertyRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelPropertyRequest:
     properties:
       carModelId:
         type: integer
@@ -226,7 +226,7 @@ definitions:
     - propertyId
     - value
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelRequest:
     properties:
       carTypeId:
         type: integer
@@ -244,7 +244,7 @@ definitions:
     - gearboxId
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelYearRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarModelYearRequest:
     properties:
       carModelId:
         type: integer
@@ -254,7 +254,7 @@ definitions:
     - carModelId
     - persianYearId
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarTypeRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCarTypeRequest:
     properties:
       name:
         maxLength: 15
@@ -263,7 +263,7 @@ definitions:
     required:
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCityRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCityRequest:
     properties:
       countryId:
         type: integer
@@ -275,7 +275,7 @@ definitions:
     - countryId
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateColorRequest:
+  github_com_krmsaeed_barber_api_dto.CreateColorRequest:
     properties:
       hexCode:
         maxLength: 7
@@ -286,7 +286,7 @@ definitions:
         minLength: 3
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateCompanyRequest:
+  github_com_krmsaeed_barber_api_dto.CreateCompanyRequest:
     properties:
       countryId:
         type: integer
@@ -298,7 +298,7 @@ definitions:
     - countryId
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateGearboxRequest:
+  github_com_krmsaeed_barber_api_dto.CreateGearboxRequest:
     properties:
       name:
         maxLength: 15
@@ -307,7 +307,7 @@ definitions:
     required:
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreatePersianYearRequest:
+  github_com_krmsaeed_barber_api_dto.CreatePersianYearRequest:
     properties:
       endAt:
         type: string
@@ -320,7 +320,7 @@ definitions:
       year:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreatePropertyCategoryRequest:
+  github_com_krmsaeed_barber_api_dto.CreatePropertyCategoryRequest:
     properties:
       icon:
         maxLength: 1000
@@ -332,7 +332,7 @@ definitions:
     required:
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreatePropertyRequest:
+  github_com_krmsaeed_barber_api_dto.CreatePropertyRequest:
     properties:
       categoryId:
         type: integer
@@ -356,7 +356,7 @@ definitions:
     - categoryId
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.CreateUpdateCountryRequest:
+  github_com_krmsaeed_barber_api_dto.CreateUpdateCountryRequest:
     properties:
       name:
         maxLength: 20
@@ -365,7 +365,7 @@ definitions:
     required:
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.FileResponse:
+  github_com_krmsaeed_barber_api_dto.FileResponse:
     properties:
       description:
         type: string
@@ -378,7 +378,7 @@ definitions:
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.Filter:
+  github_com_krmsaeed_barber_api_dto.Filter:
     properties:
       filterType:
         description: text number
@@ -392,14 +392,14 @@ definitions:
           greaterThan greaterThanOrEqual inRange endsWith
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.GearboxResponse:
+  github_com_krmsaeed_barber_api_dto.GearboxResponse:
     properties:
       id:
         type: integer
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.GetOtpRequest:
+  github_com_krmsaeed_barber_api_dto.GetOtpRequest:
     properties:
       mobileNumber:
         maxLength: 11
@@ -408,7 +408,7 @@ definitions:
     required:
     - mobileNumber
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.LoginByUsernameRequest:
+  github_com_krmsaeed_barber_api_dto.LoginByUsernameRequest:
     properties:
       password:
         minLength: 6
@@ -420,7 +420,7 @@ definitions:
     - password
     - username
     type: object
-  ? github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelColorResponse
+  ? github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelColorResponse
   : properties:
       hasNextPage:
         type: boolean
@@ -428,7 +428,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelColorResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelColorResponse'
         type: array
       pageNumber:
         type: integer
@@ -437,7 +437,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  ? github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelCommentResponse
+  ? github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelCommentResponse
   : properties:
       hasNextPage:
         type: boolean
@@ -445,7 +445,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelCommentResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelCommentResponse'
         type: array
       pageNumber:
         type: integer
@@ -454,7 +454,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  ? github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelImageResponse
+  ? github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelImageResponse
   : properties:
       hasNextPage:
         type: boolean
@@ -462,7 +462,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelImageResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelImageResponse'
         type: array
       pageNumber:
         type: integer
@@ -471,7 +471,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  ? github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelPriceHistoryResponse
+  ? github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelPriceHistoryResponse
   : properties:
       hasNextPage:
         type: boolean
@@ -479,7 +479,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPriceHistoryResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPriceHistoryResponse'
         type: array
       pageNumber:
         type: integer
@@ -488,7 +488,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  ? github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelPropertyResponse
+  ? github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelPropertyResponse
   : properties:
       hasNextPage:
         type: boolean
@@ -496,7 +496,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPropertyResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPropertyResponse'
         type: array
       pageNumber:
         type: integer
@@ -505,7 +505,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -513,7 +513,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelResponse'
         type: array
       pageNumber:
         type: integer
@@ -522,7 +522,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelYearResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelYearResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -530,7 +530,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelYearResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelYearResponse'
         type: array
       pageNumber:
         type: integer
@@ -539,7 +539,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarTypeResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarTypeResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -547,7 +547,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarTypeResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarTypeResponse'
         type: array
       pageNumber:
         type: integer
@@ -556,7 +556,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CityResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CityResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -564,7 +564,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CityResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CityResponse'
         type: array
       pageNumber:
         type: integer
@@ -573,7 +573,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_ColorResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_ColorResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -581,7 +581,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.ColorResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.ColorResponse'
         type: array
       pageNumber:
         type: integer
@@ -590,7 +590,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CompanyResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CompanyResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -598,7 +598,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CompanyResponse'
         type: array
       pageNumber:
         type: integer
@@ -607,7 +607,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CountryResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CountryResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -615,7 +615,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CountryResponse'
         type: array
       pageNumber:
         type: integer
@@ -624,7 +624,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_FileResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_FileResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -632,7 +632,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.FileResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.FileResponse'
         type: array
       pageNumber:
         type: integer
@@ -641,7 +641,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_GearboxResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_GearboxResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -649,7 +649,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.GearboxResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.GearboxResponse'
         type: array
       pageNumber:
         type: integer
@@ -658,7 +658,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_PersianYearResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_PersianYearResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -666,7 +666,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PersianYearResponse'
         type: array
       pageNumber:
         type: integer
@@ -675,7 +675,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  ? github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_PropertyCategoryResponse
+  ? github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_PropertyCategoryResponse
   : properties:
       hasNextPage:
         type: boolean
@@ -683,7 +683,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyCategoryResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyCategoryResponse'
         type: array
       pageNumber:
         type: integer
@@ -692,7 +692,7 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_PropertyResponse:
+  github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_PropertyResponse:
     properties:
       hasNextPage:
         type: boolean
@@ -700,7 +700,7 @@ definitions:
         type: boolean
       items:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyResponse'
         type: array
       pageNumber:
         type: integer
@@ -709,11 +709,11 @@ definitions:
       totalRows:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter:
+  github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter:
     properties:
       filter:
         additionalProperties:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.Filter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.Filter'
         type: object
       pageNumber:
         type: integer
@@ -721,10 +721,10 @@ definitions:
         type: integer
       sort:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.Sort'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.Sort'
         type: array
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearResponse:
+  github_com_krmsaeed_barber_api_dto.PersianYearResponse:
     properties:
       endAt:
         type: string
@@ -737,7 +737,7 @@ definitions:
       year:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearWithoutDateResponse:
+  github_com_krmsaeed_barber_api_dto.PersianYearWithoutDateResponse:
     properties:
       id:
         type: integer
@@ -746,7 +746,7 @@ definitions:
       year:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PropertyCategoryResponse:
+  github_com_krmsaeed_barber_api_dto.PropertyCategoryResponse:
     properties:
       icon:
         type: string
@@ -756,13 +756,13 @@ definitions:
         type: string
       properties:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyResponse'
         type: array
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse:
+  github_com_krmsaeed_barber_api_dto.PropertyResponse:
     properties:
       category:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyCategoryResponse'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyCategoryResponse'
       dataType:
         type: string
       description:
@@ -776,7 +776,7 @@ definitions:
       unit:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.RegisterLoginByMobileRequest:
+  github_com_krmsaeed_barber_api_dto.RegisterLoginByMobileRequest:
     properties:
       mobileNumber:
         maxLength: 11
@@ -790,7 +790,7 @@ definitions:
     - mobileNumber
     - otp
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.RegisterUserByUsernameRequest:
+  github_com_krmsaeed_barber_api_dto.RegisterUserByUsernameRequest:
     properties:
       email:
         minLength: 6
@@ -813,21 +813,21 @@ definitions:
     - password
     - username
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.Sort:
+  github_com_krmsaeed_barber_api_dto.Sort:
     properties:
       colId:
         type: string
       sort:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelColorRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelColorRequest:
     properties:
       carModelId:
         type: integer
       colorId:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelCommentRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelCommentRequest:
     properties:
       message:
         maxLength: 100
@@ -835,19 +835,19 @@ definitions:
     required:
     - message
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelImageRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelImageRequest:
     properties:
       isMainImage:
         type: boolean
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelPriceHistoryRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelPriceHistoryRequest:
     properties:
       price:
         type: number
       priceAt:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelPropertyRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelPropertyRequest:
     properties:
       value:
         maxLength: 100
@@ -855,7 +855,7 @@ definitions:
     required:
     - value
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelRequest:
     properties:
       carTypeId:
         type: integer
@@ -866,14 +866,14 @@ definitions:
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelYearRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarModelYearRequest:
     properties:
       carModelId:
         type: integer
       persianYearId:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarTypeRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCarTypeRequest:
     properties:
       name:
         maxLength: 15
@@ -882,7 +882,7 @@ definitions:
     required:
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCityRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCityRequest:
     properties:
       countryId:
         type: integer
@@ -891,7 +891,7 @@ definitions:
         minLength: 3
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateColorRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateColorRequest:
     properties:
       hexCode:
         maxLength: 7
@@ -902,7 +902,7 @@ definitions:
         minLength: 3
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCompanyRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateCompanyRequest:
     properties:
       countryId:
         type: integer
@@ -911,12 +911,12 @@ definitions:
         minLength: 3
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateFileRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateFileRequest:
     properties:
       description:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdateGearboxRequest:
+  github_com_krmsaeed_barber_api_dto.UpdateGearboxRequest:
     properties:
       name:
         maxLength: 15
@@ -925,7 +925,7 @@ definitions:
     required:
     - name
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdatePersianYearRequest:
+  github_com_krmsaeed_barber_api_dto.UpdatePersianYearRequest:
     properties:
       endAt:
         type: string
@@ -938,14 +938,14 @@ definitions:
       year:
         type: integer
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdatePropertyCategoryRequest:
+  github_com_krmsaeed_barber_api_dto.UpdatePropertyCategoryRequest:
     properties:
       icon:
         type: string
       name:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UpdatePropertyRequest:
+  github_com_krmsaeed_barber_api_dto.UpdatePropertyRequest:
     properties:
       categoryId:
         type: integer
@@ -964,7 +964,7 @@ definitions:
         maxLength: 15
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_dto.UserResponse:
+  github_com_krmsaeed_barber_api_dto.UserResponse:
     properties:
       email:
         type: string
@@ -977,20 +977,20 @@ definitions:
       username:
         type: string
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse:
+  github_com_krmsaeed_barber_api_helper.BaseHttpResponse:
     properties:
       error: {}
       result: {}
       resultCode:
-        $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.ResultCode'
+        $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.ResultCode'
       success:
         type: boolean
       validationErrors:
         items:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_validations.ValidationError'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_validations.ValidationError'
         type: array
     type: object
-  github_com_naeemaei_golang-clean-web-api_api_helper.ResultCode:
+  github_com_krmsaeed_barber_api_helper.ResultCode:
     enum:
     - 0
     - 40001
@@ -1012,7 +1012,7 @@ definitions:
     - OtpLimiterError
     - CustomRecovery
     - InternalError
-  github_com_naeemaei_golang-clean-web-api_api_validations.ValidationError:
+  github_com_krmsaeed_barber_api_validations.ValidationError:
     properties:
       message:
         type: string
@@ -1052,21 +1052,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelColorRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelColorRequest'
       responses:
         "201":
           description: CarModelColor response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModelColor
@@ -1087,15 +1087,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModelColor
@@ -1116,19 +1116,19 @@ paths:
           description: CarModelColor response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModelColor
@@ -1149,25 +1149,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelColorRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelColorRequest'
       responses:
         "200":
           description: CarModelColor response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModelColor
@@ -1184,21 +1184,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModelColor response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModelColors
@@ -1215,21 +1215,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelCommentRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelCommentRequest'
       responses:
         "201":
           description: CarModelComment response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelCommentResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelCommentResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModelComment
@@ -1250,15 +1250,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModelComment
@@ -1279,19 +1279,19 @@ paths:
           description: CarModelComment response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelCommentResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelCommentResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModelComment
@@ -1312,25 +1312,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelCommentRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelCommentRequest'
       responses:
         "200":
           description: CarModelComment response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelCommentResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelCommentResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModelComment
@@ -1347,21 +1347,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModelComment response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelCommentResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelCommentResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModelComments
@@ -1378,21 +1378,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelImageRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelImageRequest'
       responses:
         "201":
           description: CarModelImage response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelImageResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelImageResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModelImage
@@ -1413,15 +1413,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModelImage
@@ -1442,19 +1442,19 @@ paths:
           description: CarModelImage response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelImageResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelImageResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModelImage
@@ -1475,25 +1475,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelImageRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelImageRequest'
       responses:
         "200":
           description: CarModelImage response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelImageResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelImageResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModelImage
@@ -1510,21 +1510,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModelImage response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelImageResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelImageResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModelImages
@@ -1541,21 +1541,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelPriceHistoryRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelPriceHistoryRequest'
       responses:
         "201":
           description: CarModelPriceHistory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPriceHistoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPriceHistoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModelPriceHistory
@@ -1576,15 +1576,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModelPriceHistory
@@ -1605,19 +1605,19 @@ paths:
           description: CarModelPriceHistory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPriceHistoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPriceHistoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModelPriceHistory
@@ -1638,25 +1638,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelPriceHistoryRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelPriceHistoryRequest'
       responses:
         "200":
           description: CarModelPriceHistory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPriceHistoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPriceHistoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModelPriceHistory
@@ -1673,21 +1673,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModelPriceHistory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelPriceHistoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelPriceHistoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModelPriceHistories
@@ -1704,21 +1704,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelPropertyRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelPropertyRequest'
       responses:
         "201":
           description: CarModelProperty response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModelProperty
@@ -1739,15 +1739,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModelProperty
@@ -1768,19 +1768,19 @@ paths:
           description: CarModelProperty response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModelProperty
@@ -1801,25 +1801,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelPropertyRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelPropertyRequest'
       responses:
         "200":
           description: CarModelProperty response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelPropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelPropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModelProperty
@@ -1836,21 +1836,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModelProperty response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelPropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelPropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModelProperties
@@ -1867,21 +1867,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelYearRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelYearRequest'
       responses:
         "201":
           description: CarModelYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModelYear
@@ -1902,15 +1902,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModelYear
@@ -1931,19 +1931,19 @@ paths:
           description: CarModelYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModelYear
@@ -1964,25 +1964,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelYearRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelYearRequest'
       responses:
         "200":
           description: CarModelYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModelYear
@@ -1999,21 +1999,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModelYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModelYears
@@ -2030,21 +2030,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarModelRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarModelRequest'
       responses:
         "201":
           description: CarModel response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarModel
@@ -2065,15 +2065,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarModel
@@ -2094,19 +2094,19 @@ paths:
           description: CarModel response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarModel
@@ -2127,25 +2127,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarModelRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarModelRequest'
       responses:
         "200":
           description: CarModel response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarModelResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarModelResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarModel
@@ -2162,21 +2162,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarModel response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarModelResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarModelResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarModels
@@ -2193,21 +2193,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCarTypeRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCarTypeRequest'
       responses:
         "201":
           description: CarType response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarTypeResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarTypeResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a CarType
@@ -2228,15 +2228,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a CarType
@@ -2257,19 +2257,19 @@ paths:
           description: CarType response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarTypeResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarTypeResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a CarType
@@ -2290,25 +2290,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCarTypeRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCarTypeRequest'
       responses:
         "200":
           description: CarType response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CarTypeResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CarTypeResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a CarType
@@ -2325,21 +2325,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: CarType response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CarTypeResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CarTypeResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get CarTypes
@@ -2356,21 +2356,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCityRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCityRequest'
       responses:
         "201":
           description: City response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CityResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CityResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a City
@@ -2391,15 +2391,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a City
@@ -2420,19 +2420,19 @@ paths:
           description: City response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CityResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CityResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a City
@@ -2453,25 +2453,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCityRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCityRequest'
       responses:
         "200":
           description: City response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CityResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CityResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a City
@@ -2488,21 +2488,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: City response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CityResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CityResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Cities
@@ -2519,21 +2519,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateColorRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateColorRequest'
       responses:
         "201":
           description: Color response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.ColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.ColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a Color
@@ -2554,15 +2554,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a Color
@@ -2583,19 +2583,19 @@ paths:
           description: Color response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.ColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.ColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a Color
@@ -2616,25 +2616,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateColorRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateColorRequest'
       responses:
         "200":
           description: Color response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.ColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.ColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a Color
@@ -2651,21 +2651,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: Color response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_ColorResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_ColorResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Colors
@@ -2682,21 +2682,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateCompanyRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateCompanyRequest'
       responses:
         "201":
           description: Company response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CompanyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a Company
@@ -2717,15 +2717,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a Company
@@ -2746,19 +2746,19 @@ paths:
           description: Company response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CompanyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a Company
@@ -2779,25 +2779,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateCompanyRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateCompanyRequest'
       responses:
         "200":
           description: Company response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CompanyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CompanyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a Company
@@ -2814,21 +2814,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: Company response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CompanyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CompanyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Companies
@@ -2845,21 +2845,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateUpdateCountryRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateUpdateCountryRequest'
       responses:
         "201":
           description: Country response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CountryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a country
@@ -2880,11 +2880,11 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a country
@@ -2905,15 +2905,15 @@ paths:
           description: Country response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CountryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a country
@@ -2934,21 +2934,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateUpdateCountryRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateUpdateCountryRequest'
       responses:
         "200":
           description: Country response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CountryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CountryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a country
@@ -2965,21 +2965,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: Country response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_CountryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_CountryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Countries
@@ -3005,15 +3005,15 @@ paths:
           description: File response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.FileResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.FileResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a file
@@ -3034,11 +3034,11 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a file
@@ -3059,15 +3059,15 @@ paths:
           description: File response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.FileResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.FileResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a file
@@ -3088,21 +3088,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateFileRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateFileRequest'
       responses:
         "200":
           description: File response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.FileResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.FileResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a file
@@ -3119,21 +3119,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: File response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_FileResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_FileResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Files
@@ -3150,21 +3150,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreateGearboxRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreateGearboxRequest'
       responses:
         "201":
           description: Gearbox response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.GearboxResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.GearboxResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a Gearbox
@@ -3185,15 +3185,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a Gearbox
@@ -3214,19 +3214,19 @@ paths:
           description: Gearbox response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.GearboxResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.GearboxResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a Gearbox
@@ -3247,25 +3247,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdateGearboxRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdateGearboxRequest'
       responses:
         "200":
           description: Gearbox response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.GearboxResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.GearboxResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a Gearbox
@@ -3282,21 +3282,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: Gearbox response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_GearboxResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_GearboxResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Gearboxes
@@ -3313,11 +3313,11 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       summary: Health Check
       tags:
       - health
@@ -3332,21 +3332,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreatePropertyRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreatePropertyRequest'
       responses:
         "201":
           description: Property response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a Property
@@ -3367,15 +3367,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a Property
@@ -3396,19 +3396,19 @@ paths:
           description: Property response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a Property
@@ -3429,25 +3429,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdatePropertyRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdatePropertyRequest'
       responses:
         "200":
           description: Property response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a Property
@@ -3464,21 +3464,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: Property response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_PropertyResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_PropertyResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get Properties
@@ -3495,21 +3495,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreatePropertyCategoryRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreatePropertyCategoryRequest'
       responses:
         "201":
           description: PropertyCategory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyCategoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyCategoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a PropertyCategory
@@ -3530,15 +3530,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a PropertyCategory
@@ -3559,19 +3559,19 @@ paths:
           description: PropertyCategory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyCategoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyCategoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a PropertyCategory
@@ -3592,25 +3592,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdatePropertyCategoryRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdatePropertyCategoryRequest'
       responses:
         "200":
           description: PropertyCategory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PropertyCategoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PropertyCategoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a PropertyCategory
@@ -3627,21 +3627,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: PropertyCategory response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_PropertyCategoryResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_PropertyCategoryResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get PropertyCategories
@@ -3666,7 +3666,7 @@ paths:
           description: Success
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 validationErrors:
                   type: object
@@ -3674,7 +3674,7 @@ paths:
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: BodyBinder
@@ -3703,7 +3703,7 @@ paths:
           description: Success
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 validationErrors:
                   type: object
@@ -3711,7 +3711,7 @@ paths:
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: BodyBinder
@@ -3734,11 +3734,11 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       summary: UserById
       tags:
       - Test
@@ -3753,22 +3753,22 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.RegisterLoginByMobileRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.RegisterLoginByMobileRequest'
       produces:
       - application/json
       responses:
         "201":
           description: Success
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "409":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       summary: RegisterLoginByMobileNumber
       tags:
       - Users
@@ -3783,22 +3783,22 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.LoginByUsernameRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.LoginByUsernameRequest'
       produces:
       - application/json
       responses:
         "201":
           description: Success
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "409":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       summary: LoginByUsername
       tags:
       - Users
@@ -3813,22 +3813,22 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.RegisterUserByUsernameRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.RegisterUserByUsernameRequest'
       produces:
       - application/json
       responses:
         "201":
           description: Success
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "409":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       summary: RegisterByUsername
       tags:
       - Users
@@ -3843,22 +3843,22 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.GetOtpRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.GetOtpRequest'
       produces:
       - application/json
       responses:
         "201":
           description: Success
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "409":
           description: Failed
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       summary: Send otp to user
       tags:
       - Users
@@ -3873,21 +3873,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.CreatePersianYearRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.CreatePersianYearRequest'
       responses:
         "201":
           description: PersianYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PersianYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Create a PersianYear
@@ -3908,15 +3908,15 @@ paths:
         "200":
           description: response
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Delete a PersianYear
@@ -3937,19 +3937,19 @@ paths:
           description: PersianYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PersianYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get a PersianYear
@@ -3970,25 +3970,25 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.UpdatePersianYearRequest'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.UpdatePersianYearRequest'
       responses:
         "200":
           description: PersianYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PersianYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PersianYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
         "404":
           description: Not found
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Update a PersianYear
@@ -4005,21 +4005,21 @@ paths:
         name: Request
         required: true
         schema:
-          $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PaginationInputWithFilter'
+          $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PaginationInputWithFilter'
       responses:
         "200":
           description: PersianYear response
           schema:
             allOf:
-            - $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            - $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
             - properties:
                 result:
-                  $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_dto.PagedList-github_com_naeemaei_golang-clean-web-api_api_dto_PersianYearResponse'
+                  $ref: '#/definitions/github_com_krmsaeed_barber_api_dto.PagedList-github_com_krmsaeed_barber_api_dto_PersianYearResponse'
               type: object
         "400":
           description: Bad request
           schema:
-            $ref: '#/definitions/github_com_naeemaei_golang-clean-web-api_api_helper.BaseHttpResponse'
+            $ref: '#/definitions/github_com_krmsaeed_barber_api_helper.BaseHttpResponse'
       security:
       - AuthBearer: []
       summary: Get PersianYears

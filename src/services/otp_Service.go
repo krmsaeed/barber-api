@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v7"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/constants"
-	"github.com/naeemaei/golang-clean-web-api/data/cache"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
-	"github.com/naeemaei/golang-clean-web-api/pkg/service_errors"
+	"github.com/krmsaeed/barber-api/config"
+	"github.com/krmsaeed/barber-api/constants"
+	"github.com/krmsaeed/barber-api/data/cache"
+	"github.com/krmsaeed/barber-api/pkg/logging"
+	"github.com/krmsaeed/barber-api/pkg/service_errors"
 )
 
 type OtpService struct {

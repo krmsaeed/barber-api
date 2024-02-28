@@ -2,8 +2,8 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/api/handlers"
-	"github.com/naeemaei/golang-clean-web-api/config"
+	"github.com/krmsaeed/barber-api/api/handlers"
+	"github.com/krmsaeed/barber-api/config"
 )
 
 func Country(r *gin.RouterGroup, cfg *config.Config) {

@@ -6,17 +6,14 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
+	"github.com/krmsaeed/barber-api/api/helper"
+	"github.com/krmsaeed/barber-api/config"
+	"github.com/krmsaeed/barber-api/pkg/logging"
 )
-
-
 
 var logger = logging.NewLogger(config.GetConfig())
 
-
-func Create[Ti any,To any](c *gin.Context, caller func(ctx context.Context, req *Ti)(*To, error)){
+func Create[Ti any, To any](c *gin.Context, caller func(ctx context.Context, req *Ti) (*To, error)) {
 	req := new(Ti)
 	err := c.ShouldBindJSON(&req)
 	if err != nil {
@@ -34,9 +31,9 @@ func Create[Ti any,To any](c *gin.Context, caller func(ctx context.Context, req 
 	c.JSON(http.StatusCreated, helper.GenerateBaseResponse(res, true, 0))
 }
 
-func Update[Ti any,To any](c *gin.Context, caller func(ctx context.Context,id int, req *Ti)(*To, error)){
+func Update[Ti any, To any](c *gin.Context, caller func(ctx context.Context, id int, req *Ti) (*To, error)) {
 	id, _ := strconv.Atoi(c.Params.ByName("id"))
-	req :=new(Ti)
+	req := new(Ti)
 	err := c.ShouldBindJSON(&req)
 	if err != nil {
 		c.AbortWithStatusJSON(http.StatusBadRequest,
@@ -53,7 +50,7 @@ func Update[Ti any,To any](c *gin.Context, caller func(ctx context.Context,id in
 	c.JSON(http.StatusOK, helper.GenerateBaseResponse(res, true, 0))
 }
 
-func Delete(c *gin.Context, caller func(ctx context.Context,id int)error){
+func Delete(c *gin.Context, caller func(ctx context.Context, id int) error) {
 	id, _ := strconv.Atoi(c.Params.ByName("id"))
 	if id == 0 {
 		c.AbortWithStatusJSON(http.StatusNotFound,
@@ -70,7 +67,7 @@ func Delete(c *gin.Context, caller func(ctx context.Context,id int)error){
 	c.JSON(http.StatusOK, helper.GenerateBaseResponse(nil, true, 0))
 }
 
-func GetById[To any](c *gin.Context,caller func(c context.Context, id int) (*To, error)){
+func GetById[To any](c *gin.Context, caller func(c context.Context, id int) (*To, error)) {
 	id, _ := strconv.Atoi(c.Params.ByName("id"))
 	if id == 0 {
 		c.AbortWithStatusJSON(http.StatusNotFound,
@@ -87,7 +84,7 @@ func GetById[To any](c *gin.Context,caller func(c context.Context, id int) (*To,
 	c.JSON(http.StatusOK, helper.GenerateBaseResponse(res, true, 0))
 }
 
-func GetByFilter[Ti any, To any](c *gin.Context, caller func(c context.Context, req *Ti)(*To, error)){
+func GetByFilter[Ti any, To any](c *gin.Context, caller func(c context.Context, req *Ti) (*To, error)) {
 	req := new(Ti)
 	err := c.ShouldBindJSON(&req)
 	if err != nil {
